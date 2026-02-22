@@ -19,21 +19,21 @@ export default function Home() {
            backdrop-grayscale backdrop-blur-xs"
           >
             <div className="m-9">
-              <p className="text-2xl md:text-5xl  font-bold">
+              <h1 className="text-2xl md:text-5xl  font-bold">
                 Tupi limpeza e Pintura Eireli possui mais de 32 anos de
                 experiência em limpeza e pintura de faixadas.
-              </p>
+              </h1>
               <div className="flex items-center justify-end mt-40">
-                <h1 className="text-2xl">
+                <h2 className="text-2xl">
                   Operamos por todo ABC paulista e São Paulo.
-                </h1>
+                </h2>
               </div>
             </div>
           </div>
         </section>
 
-        <div className="flex items-center justify-between h-fit w-full sm:mb-7">
-          <div className="w-full m-6 grid grid-cols-3 grid-rows-2 gap-5">
+        <div className="flex items-center justify-between h-fit w-full">
+          <div className="w-full m-6 grid grid-cols-1 grid-rows-5 gap-5 md:grid-cols-3 md:grid-rows-2">
             <Card
               icon={User2}
               title="Equipe própria"
@@ -42,7 +42,7 @@ export default function Home() {
             />
             <Card
               icon={Bubbles}
-              title="Limpeza de faixadas"
+              title="Limpeza de fachadas"
               text="Hidrojaetamento etc."
             />
             <Card
@@ -50,7 +50,7 @@ export default function Home() {
               text="Epóxi (pisos), Poliuretano (UV), 
               Esmalte Sintético, Tinta Intumescente (proteção contra fogo), 
               Anticoversiva."
-              title="Pintura"
+              title="Pintura Industrial e Predial"
             />
             <Card
               icon={FastForward}
@@ -72,11 +72,11 @@ export default function Home() {
         </div>
 
         <div className="flex items-center justify-center w-full h-screen">
-          <p className="font-bold text-3xl">Nossa Operação</p>
+          <h2 className="font-bold text-3xl">Nossa Operação</h2>
         </div>
 
         <div className="flex items-center justify-center w-full">
-          <p className="font-bold text-3xl">Nossos clientes</p>
+          <h2 className="font-bold text-3xl">Nossos clientes</h2>
         </div>
         <Marquee />
       </main>
