@@ -1,5 +1,4 @@
 import { LucideIcon } from "lucide-react";
-import React from "react";
 
 type CardProps = {
   icon: LucideIcon;
@@ -9,12 +8,12 @@ type CardProps = {
 
 export default function Card({ icon: Icon, text, title }: CardProps) {
   return (
-    <div className="my-5 flex items-center justify-center bg-zinc-300 rounded-2xl size-fit ">
-      <div className="m-6">
-        <p className="font-bold text-3xl">
+    <div className="my-5 flex items-center justify-center bg-zinc-200 rounded-2xl sm:h-64 ">
+      <div className="p-20">
+        <div className="mb-6 flex items-center justify-center">
           <Icon size={64} />
-          {title}
-        </p>
+        </div>
+        <p className="font-bold text-3xl">{title}</p>
         <p>{text}</p>
       </div>
     </div>
