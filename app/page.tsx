@@ -1,20 +1,19 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <header>
-        <nav className="">
-          <ul className="flex flex-row items-center justify-evenly my-6">
-            <li>Serviços</li>
-            <li>Quem somos</li>
-            <li>Atuação</li>
-            <li>Contato</li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
+
       <main>
-        <p>Há 32 anos </p>
+        <section className="w-full h-80 bg-cover bg-center bg-no-repeat bg-[url('/example.webp')]">
+          <div className="flex items-center justify-center h-full text-white">
+            <p className="text-2xl md:text-5xl">
+              Mais de 32 anos de experiência em limpeza e pintura de faixadas
+            </p>
+          </div>
+        </section>
       </main>
       <footer></footer>
     </>
