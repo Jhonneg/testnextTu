@@ -19,11 +19,11 @@ export default function Home() {
            backdrop-grayscale backdrop-blur-xs"
           >
             <div className="m-9">
-              <p className="text-2xl md:text-5xl m-9 font-bold">
+              <p className="text-2xl md:text-5xl  font-bold">
                 Tupi limpeza e Pintura Eireli possui mais de 32 anos de
                 experiência em limpeza e pintura de faixadas.
               </p>
-              <div className="flex items-center justify-end">
+              <div className="flex items-center justify-end mt-40">
                 <h1 className="text-2xl">
                   Operamos por todo ABC paulista e São Paulo.
                 </h1>
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="flex items-center justify-between h-screen w-full sm:mb-7">
+        <div className="flex items-center justify-between h-fit w-full sm:mb-7">
           <div className="w-full m-6 grid grid-cols-3 grid-rows-2 gap-5">
             <Card
               icon={User2}
@@ -69,6 +69,10 @@ export default function Home() {
               text="Trabalhamos com profissionais treinados e certificados, seguindos as Normas Reguladoras"
             />
           </div>
+        </div>
+
+        <div className="flex items-center justify-center w-full h-screen">
+          <p className="font-bold text-3xl">Nossa Operação</p>
         </div>
 
         <div className="flex items-center justify-center w-full">
