@@ -8,34 +8,31 @@ import {
   Headset,
   Shield,
 } from "lucide-react";
-import Image from "next/image";
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <main className="">
-        <section className="w-full h-96 bg-cover bg-center bg-no-repeat bg-[url('/example.webp')]">
-          <div className="flex flex-col items-start justify-center h-full text-white">
+      <main>
+        <section className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('/example.webp')]">
+          <div
+            className="flex items-center justify-start h-full text-white 
+           backdrop-grayscale backdrop-blur-xs"
+          >
             <div className="m-9">
-              <h1 className="text-2xl md:text-5xl w-1/2 m-9 font-bold">
+              <p className="text-2xl md:text-5xl m-9 font-bold">
                 Tupi limpeza e Pintura Eireli possui mais de 32 anos de
                 experiência em limpeza e pintura de faixadas.
-              </h1>
-              <p>Operamos por todo ABC paulista e São Paulo.</p>
+              </p>
+              <div className="flex items-center justify-end">
+                <h1 className="text-2xl">
+                  Operamos por todo ABC paulista e São Paulo.
+                </h1>
+              </div>
             </div>
           </div>
         </section>
 
         <div className="flex items-center justify-between h-screen w-full sm:mb-7">
-          {/* <div className="flex justify-center items-center w-1/2 h-72 rounded-2xl mr-2 bg-cover bg-center bg-no-repeat bg-[url('/example2.webp')]">
-            <p className="m-6 text-4xl font-bold text-white">
-              Tupi Limpeza e pinturas
-            </p>
-            <p className="text-white m-6 text-2xl">
-              Tupi Limpeza e pinturas atua há mais de 32 anos no mercado de
-              pintura e limpeza indutrial, com entrega rápida e com qualidade.
-            </p>
-          </div> */}
           <div className="w-full m-6 grid grid-cols-3 grid-rows-2 gap-5">
             <Card
               icon={User2}
@@ -73,11 +70,11 @@ export default function Home() {
             />
           </div>
         </div>
-        {/* nossos clients */}
-        <div className="flex items-center justify-center h-80">
+
+        <div className="flex items-center justify-center w-full">
           <p className="font-bold text-3xl">Nossos clientes</p>
-          <Marquee />
         </div>
+        <Marquee />
       </main>
 
       <footer className="bg-blue-600 text-white">
