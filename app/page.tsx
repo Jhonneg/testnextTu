@@ -47,9 +47,8 @@ export default function Home() {
             />
             <Card
               icon={PaintRoller}
-              text="Epóxi (pisos), Esmalte Sintético
-              ."
-              title="Pintura Industrial e Predial"
+              text="Epóxi (pisos), Esmalte Sintético, Acrilica, Latex."
+              title="Pintura Industrial e Predial."
             />
             <Card
               icon={FastForward}
@@ -60,12 +59,12 @@ export default function Home() {
             <Card
               icon={Headset}
               title="Suporte Continuo"
-              text="Apoio constante durante o serviço, acompanhamento técnico, á demanda do seu empreendimento"
+              text="Apoio constante durante o serviço, acompanhamento técnico, á demanda do seu empreendimento."
             />
             <Card
               icon={Shield}
               title="Segurança"
-              text="Trabalhamos com profissionais treinados e certificados, seguindos as Normas Reguladoras"
+              text="Trabalhamos com profissionais treinados e certificados, seguindo as Normas Reguladoras."
             />
           </div>
         </div>

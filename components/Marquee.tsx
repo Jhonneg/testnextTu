@@ -9,7 +9,7 @@ type IconProps = {
 function LogoIcon({ imgPath, name }: IconProps) {
   return (
     <div className="flex-none marquee-item">
-      <Image src={imgPath} alt={name} width={64} height={64} />
+      <Image src={imgPath} alt={name} width={144} height={144} />
     </div>
   );
 }

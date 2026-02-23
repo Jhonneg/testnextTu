@@ -53,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable}} antialiased bg-zinc-100`}>
+      <body className={`${inter.variable}} antialiased`}>
         <Header />
 
         {children}
