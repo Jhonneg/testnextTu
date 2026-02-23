@@ -20,7 +20,7 @@ export default function Home() {
           >
             <div className="m-9">
               <h1 className="text-2xl md:text-5xl  font-bold">
-                Tupi limpeza e Pintura Eireli possui mais de 32 anos de
+                Tupi Limpeza e Pintura Eireli possui mais de 32 anos de
                 experiência em limpeza e pintura de faixadas.
               </h1>
               <div className="flex items-center justify-end mt-40">
@@ -37,7 +37,7 @@ export default function Home() {
             <Card
               icon={User2}
               title="Equipe própria"
-              text="Equipe treinada, certificada e experiênte para trabalho em altura e
+              text="Equipe treinada, certificada e experiente para trabalho em altura e
           espaços confinados."
             />
             <Card
@@ -47,9 +47,8 @@ export default function Home() {
             />
             <Card
               icon={PaintRoller}
-              text="Epóxi (pisos), Poliuretano (UV), 
-              Esmalte Sintético, Tinta Intumescente (proteção contra fogo), 
-              Anticoversiva."
+              text="Epóxi (pisos), Esmalte Sintético
+              ."
               title="Pintura Industrial e Predial"
             />
             <Card

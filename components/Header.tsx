@@ -12,9 +12,6 @@ export default function Header() {
           <Link href="contato">
             <li className="hover:underline">Contato</li>
           </Link>
-          <Link href="atuacao">
-            <li className="hover:underline">Atuação</li>
-          </Link>
         </ul>
       </nav>
     </header>
