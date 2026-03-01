@@ -29,22 +29,22 @@
 .animate-pulse-custom {
   animation: pulse-custom 2s infinite;
 }
-@keyframes marquee {
+
+@keyframes scroll {
   0% {
-    left: 0;
+    transform: translateX(0);
   }
   100% {
-    left: -100%;
+    transform: translateX(-100%);
   }
 }
 
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.group:hover .animate-scroll {
+  animation-play-state: paused;
 }
 
 .animate-scroll {
