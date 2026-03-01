@@ -27,7 +27,7 @@ export default function Navbar() {
 
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://wa.me/551194084-8284"
+              href="https://wa.me/5511940848284"
               className="flex items-center px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20"
             >
               <Phone className="w-4 h-4 mr-2" />
@@ -53,13 +53,13 @@ export default function Navbar() {
               Início
             </MobileNavLink>
             <MobileNavLink
-              href="#servicos"
+              href="servicos"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Serviços
             </MobileNavLink>
             <MobileNavLink
-              href="#contato"
+              href="contato"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contato
@@ -67,7 +67,7 @@ export default function Navbar() {
 
             <div className="pt-4 mt-4 border-t border-gray-100">
               <a
-                href="https://wa.me/551194084-8284"
+                href="https://wa.me/5511940848284"
                 className="block w-full text-center px-4 py-3 text-white bg-blue-600 font-bold rounded-lg"
               >
                 Solicitar Orçamento via WhatsApp
