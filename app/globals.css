@@ -18,8 +18,13 @@
   float: left;
 }
 @keyframes pulse-custom {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 .animate-pulse-custom {
   animation: pulse-custom 2s infinite;
@@ -31,4 +36,23 @@
   100% {
     left: -100%;
   }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+  display: flex; 
+  width: max-content; 
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
 }
