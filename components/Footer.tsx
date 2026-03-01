@@ -25,7 +25,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-start group"
                 >
-                  <MapPin className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0 group-hover:text-blue-400" />
+                  <MapPin className="w-5 h-5 text-blue-500 mr-3 mt-1 shrink-0 group-hover:text-blue-400" />
                   <span className="text-slate-400 group-hover:text-white transition-colors">
                     R. Martim Carvalho, 166 <br />
                     Vila Nogueira, Diadema - SP
@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="tel:551140753615" className="flex items-center group">
-                  <Phone className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0 group-hover:text-blue-400" />
+                  <Phone className="w-5 h-5 text-blue-500 mr-3 shrink-0 group-hover:text-blue-400" />
                   <span className="text-slate-400 group-hover:text-white transition-colors">
                     (11) 4075-3615
                   </span>
@@ -44,7 +44,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="tel:11 94084-8284" className="flex items-center group">
-                  <Phone className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0 group-hover:text-blue-400" />
+                  <Phone className="w-5 h-5 text-blue-500 mr-3 shrink-0 group-hover:text-blue-400" />
                   <span className="text-slate-400 group-hover:text-white transition-colors">
                     (11) 94084-8284
                   </span>
@@ -56,14 +56,14 @@ export default function Footer() {
                   href="mailto:tupilimpeza@uol.com.br"
                   className="flex items-center group"
                 >
-                  <Mail className="w-5 h-5 text-blue-500 mr-3 flex-shrink-0 group-hover:text-blue-400" />
+                  <Mail className="w-5 h-5 text-blue-500 mr-3 shrink-0 group-hover:text-blue-400" />
                   <span className="text-slate-400 group-hover:text-white transition-colors">
                     tupilimpeza@uol.com.br
                   </span>
                 </a>
               </li>
               <li className="flex items-start">
-                <Clock className="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" />
+                <Clock className="w-5 h-5 text-blue-500 mr-3 mt-1 shrink-0" />
                 <span className="text-slate-400">
                   Seg - Sex: 8h às 17:30h
                   <br />
@@ -84,12 +84,13 @@ export default function Footer() {
           <p className="mt-2 md:mt-0">
             Desenvolvido por{" "}
             <span className="text-white">
-              <a target="_blank" href="https://jhonneg.is-a.dev/">Jhonne</a>
+              <a target="_blank" href="https://jhonneg.is-a.dev/">
+                Jhonne
+              </a>
             </span>
           </p>
         </div>
       </div>
-      </footer>
-      
+    </footer>
   );
 }

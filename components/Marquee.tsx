@@ -20,7 +20,6 @@ export default function Marquee() {
         }}
       >
         <div className="animate-scroll gap-12 sm:gap-24">
-          {/* List 1 */}
           {logoIconsList.map((logo, index) => (
             <div
               key={`original-${index}`}

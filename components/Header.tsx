@@ -11,14 +11,11 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <div className="flex-shrink-0 cursor-pointer">
+          <div className="shrink-0 cursor-pointer">
             <Link href="/" className="flex items-center gap-2">
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
                 T
               </div>
-              <span className="text-2xl font-bold text-gray-900 tracking-tight">
-                Tupi<span className="text-blue-600">Limpeza</span>
-              </span>
             </Link>
           </div>
 
