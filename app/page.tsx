@@ -9,7 +9,7 @@ import img4 from "@/public/limpeza4.jpeg";
 import img5 from "@/public/pintura1.jpeg";
 import img6 from "@/public/lona.jpeg";
 import { cardProps } from "@/constants";
-
+import Servicos from "@/components/Servicos";
 
 export default function Home() {
   const images = [img1, img2, img3, img4, img5, img6];
@@ -34,21 +34,8 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="w-full max-w-6xl mx-auto p-4">
-          <h2 className="font-bold text-3xl mb-9 text-center">
-            Nossos Serviços
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cardProps.map((card, index) => (
-              <div
-                key={index}
-                className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
-              >
-                <Card icon={card.icon} text={card.text} title={card.title} />
-              </div>
-            ))}
-          </div>
-        </div>
+        <h2 className="font-bold text-3xl mb-9 text-center">Nossos Serviços</h2>
+        <Servicos />
 
         <div className="w-full max-w-6xl mx-auto p-4">
           <h2 className="font-bold text-3xl mb-9 text-center">
