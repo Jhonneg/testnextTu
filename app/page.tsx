@@ -23,9 +23,6 @@ export default function Home() {
         <Servicos />
 
         <div className="w-full max-w-6xl mx-auto p-4">
-          <h2 className="font-bold text-3xl mb-9 text-center">
-            Nossa Operação
-          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {images.map((src, index) => (
               <div
