@@ -1,79 +1,78 @@
 import Card from "@/components/Card";
 import Marquee from "@/components/Marquee";
-import {
-  PaintRoller,
-  User2,
-  Bubbles,
-  FastForward,
-  Headset,
-  Shield,
-} from "lucide-react";
+
+import Image from "next/image";
+import img1 from "@/public/limpeza1.jpeg";
+import img2 from "@/public/limpeza22.png";
+import img3 from "@/public/limpeza3.jpeg";
+import img4 from "@/public/limpeza4.jpeg";
+import img5 from "@/public/pintura1.jpeg";
+import img6 from "@/public/lona.jpeg";
+import { cardProps } from "@/constants";
+
+
 export default function Home() {
+  const images = [img1, img2, img3, img4, img5, img6];
+
   return (
     <>
       {/* Hero */}
       <main>
         <section className="w-full h-screen bg-cover bg-center bg-no-repeat bg-[url('/example.webp')]">
-          <div
-            className="flex items-center justify-start h-full text-white 
-           backdrop-grayscale backdrop-blur-xs"
-          >
+          <div className="flex items-center justify-start h-full text-white">
             <div className="m-9">
               <h1 className="text-2xl md:text-5xl  font-bold">
                 Tupi Limpeza e Pintura Eireli possui mais de 32 anos de
-                experiência em limpeza e pintura de faixadas.
+                experiência em limpeza e pintura de fachadas.
               </h1>
               <div className="flex items-center justify-end mt-40">
                 <h2 className="text-2xl">
-                  Operamos por todo ABC paulista e São Paulo.
+                  Operamos por todo estado de São Paulo.
                 </h2>
               </div>
             </div>
           </div>
         </section>
 
-        <div className="flex items-center justify-between h-fit w-full">
-          <div className="w-full m-6 grid grid-cols-1 grid-rows-5 gap-5 md:grid-cols-3 md:grid-rows-2">
-            <Card
-              icon={User2}
-              title="Equipe própria"
-              text="Equipe treinada, certificada e experiente para trabalho em altura e
-          espaços confinados."
-            />
-            <Card
-              icon={Bubbles}
-              title="Limpeza de fachadas"
-              text="Hidrojaetamento etc."
-            />
-            <Card
-              icon={PaintRoller}
-              text="Epóxi (pisos), Esmalte Sintético, Acrilica, Latex."
-              title="Pintura Industrial e Predial."
-            />
-            <Card
-              icon={FastForward}
-              text="Trabalho noturno, finais de semana e feriados, sem parar a
-                produção."
-              title="Agilidade"
-            />
-            <Card
-              icon={Headset}
-              title="Suporte Continuo"
-              text="Apoio constante durante o serviço, acompanhamento técnico, á demanda do seu empreendimento."
-            />
-            <Card
-              icon={Shield}
-              title="Segurança"
-              text="Trabalhamos com profissionais treinados e certificados, seguindo as Normas Reguladoras."
-            />
+        <div className="w-full max-w-6xl mx-auto p-4">
+          <h2 className="font-bold text-3xl mb-9 text-center">
+            Nossos Serviços
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {cardProps.map((card, index) => (
+              <div
+                key={index}
+                className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+              >
+                <Card icon={card.icon} text={card.text} title={card.title} />
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className="flex items-center justify-center w-full h-screen">
-          <h2 className="font-bold text-3xl">Nossa Operação</h2>
+        <div className="w-full max-w-6xl mx-auto p-4">
+          <h2 className="font-bold text-3xl mb-9 text-center">
+            Nossa Operação
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {images.map((src, index) => (
+              <div
+                key={index}
+                className="relative w-full h-96 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+              >
+                <Image
+                  src={src}
+                  alt={`Project ${index + 1}`}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-center justify-center w-full my-16">
           <h2 className="font-bold text-3xl">Nossos clientes</h2>
         </div>
         <Marquee />

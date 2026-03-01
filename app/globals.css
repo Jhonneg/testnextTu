@@ -17,6 +17,13 @@
 .marquee-item {
   float: left;
 }
+@keyframes pulse-custom {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.animate-pulse-custom {
+  animation: pulse-custom 2s infinite;
+}
 @keyframes marquee {
   0% {
     left: 0;

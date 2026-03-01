@@ -1,8 +1,6 @@
-
 export default function WhatsAppButton() {
-  // Replace with your info
-  const phoneNumber = "551140753615"; // Country code + Area code + Number
-  const message = "Olá! Gostaria de um orçamento para minha empresa."; // URL Encoded message
+  const phoneNumber = "5511940848284";
+  const message = "Olá! Gostaria de um orçamento para minha empresa.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
@@ -11,10 +9,9 @@ export default function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-lg hover:bg-[#20ba5a] transition-all duration-300 hover:scale-110 animate-bounce-slow"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-lg hover:bg-[#20ba5a] transition-all duration-300 hover:scale-110 animate-bounce-slow animate-pulse-custom"
       aria-label="Chat on WhatsApp"
     >
-      {/* WhatsApp SVG Icon */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="32"

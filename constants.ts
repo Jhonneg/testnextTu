@@ -1,3 +1,12 @@
+import {
+  PaintRoller,
+  User2,
+  Bubbles,
+  FastForward,
+  Headset,
+  Shield,
+} from "lucide-react";
+
 export const logoIconsList = [
   {
     imgPath: "Sabesp.svg",
@@ -21,8 +30,39 @@ export const logoIconsList = [
     imgPath: "/analia.webp",
   },
   {
-    imgPath: "/caetano.jpeg",
+    imgPath: "/caetano.webp",
   },
 ];
 
-// , Apsen, Shopping morumbi, são caetano, jundiai, Henqel,, APD, , Viva, THL, Ascoli Engenharia.
+export const cardProps = [
+  {
+    icon: User2,
+    title: "Equipe Própria",
+    text: "Equipe treinada, certificada e experiente para trabalho em altura e espaços confinados.",
+  },
+  {
+    icon: Bubbles,
+    title: "Limpeza de fachadas",
+    text: "Hidrojaetamento, Limpeza de lonas, Limpeza de calhas.",
+  },
+  {
+    icon: PaintRoller,
+    text: "Epóxi, Esmalte Sintético, Acrilica, Latex.",
+    title: "Pintura Industrial e Predial.",
+  },
+  {
+    icon: FastForward,
+    text: "Trabalho noturno, finais de semana e feriados, sem parar aprodução.",
+    title: "Agilidade",
+  },
+  {
+    icon: Headset,
+    title: "Suporte Continuo",
+    text: "Apoio constante durante o serviço, acompanhamento técnico, á demanda do seu empreendimento.",
+  },
+  {
+    icon: Shield,
+    title: "Segurança",
+    text: "Trabalhamos com profissionais treinados e certificados, seguindo as Normas Reguladoras.",
+  },
+];

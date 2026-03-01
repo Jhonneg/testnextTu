@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Tupi limpeza e pinturas",
-  description: "Pintura e limpeza de faixadas ",
+  description: "Pintura e limpeza de fachadas ",
   keywords:
     "Tupi Limpeza, Pintura Fachada, Limpeza Fachada, Pintura Industrial, Limpeza Predial",
   openGraph: {
