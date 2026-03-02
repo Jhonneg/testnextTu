@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="shrink-0 cursor-pointer">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/tupilogo.png" height={120} width={120} />
+              <Image src="/tupilogo.png" alt="Logo" height={120} width={120} />
             </Link>
           </div>
 
