@@ -10,10 +10,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tupi limpeza e pinturas",
-  description: "Pintura e limpeza de fachadas ",
+  title:
+    "Tupi Limpeza e Pinturas | Especialistas em Limpeza e Pintura de Fachadas em São Paulo",
+  description:
+    "A Tupi Limpeza e Pinturas oferece serviços especializados em limpeza de fachadas, pintura industrial, tratamento de superfícies e manutenção predial. Atendemos condomínios e indústrias em toda a Grande São Paulo e ABC Paulista. Mais de 32 anos de experiência, qualidade e segurança.",
   keywords:
-    "Tupi Limpeza, Pintura Fachada, Limpeza Fachada, Pintura Industrial, Limpeza Predial",
+    "Tupi Limpeza, Pintura Fachada, Limpeza Fachada, Pintura Industrial, Limpeza Predial, Limpeza de Vidro, Hidrojateamento, Manutenção de Calhas, Impermeabilização, Diadema, São Paulo",
   openGraph: {
     title: "Tupi Limpeza e Pinturas | Especialistas em Fachadas e Industrial",
     description:
@@ -44,6 +46,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: "https://www.tupilimpeza.com.br", // Add your canonical URL here
+  },
 };
 
 export default function RootLayout({
@@ -52,7 +57,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${inter.variable}} antialiased`}>
         <Header />
 
